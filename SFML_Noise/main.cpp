@@ -3,7 +3,8 @@
 #include <iostream>
 #include <cmath>
 
-#define SIZE 2.f
+#define SIZE 5.f
+#define PI 3.141592653579
 
 int abc = 0;
 int width = 2560;
@@ -13,21 +14,7 @@ using namespace std;
 
 int calcPixel(int x, int y, char rgb)
 {
-	float value = sin(x) * 100000 * sin(y);
-	int r = fabs(sin(value) * 255);
-	int g = fabs(tan(value) * 255);
-	int b = 100;
-	switch (rgb)	
-	{
-	case 'r':
-		return r;
-	case 'g':
-		return g;
-	case 'b':
-		return b;
-	default:
-		break;
-	}
+	
 }
 
 
